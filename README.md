@@ -1,8 +1,10 @@
 # challenges-and-data-structures
 
-### Challenge A: Array Reversal
+### Challenge 1 A: Array Reversal
 ![Array Reversal Whiteboard](Challenge1A.jpg)
 
-### Challenge B: Most Frequent Number
+### Challenge 1 B: Most Frequent Number
 ![Most Frequent Number Whiteboard](Challenge1B.jpg)
 
+### Challenge 2 B: Most Frequent Number
+![Minimum Number Whiteboard](Challenge2.jpg)
