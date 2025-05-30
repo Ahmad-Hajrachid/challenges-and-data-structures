@@ -22,4 +22,4 @@
 
 ### Challenge 4 Remove Middle Value
 
-![Remove-Middle-Value](challenges/challenge4.png)
+![Remove-Middle-Value](Challenges/challenge4.png)
