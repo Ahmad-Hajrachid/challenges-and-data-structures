@@ -19,3 +19,7 @@
 ### Challenge 3 Console.log results
 
 ![Minimum Number Whiteboard](Challenges/Reverse-Characters/Console.png)
+
+### Challenge 4 Remove Middle Value
+
+![Remove-Middle-Value](challenges/challenge4.png)
