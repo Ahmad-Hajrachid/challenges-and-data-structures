@@ -1,0 +1,20 @@
+const list = require("../LinkedList");
+let listOne = new list()
+listOne.add(1)
+listOne.add(2)
+listOne.add(3)
+listOne.add(4)
+listOne.add(5)
+console.log("Working with regular linked list")
+listOne.printList()
+listOne.Reverse()
+listOne.printList()
+
+console.log("Working with empty linked list")
+let Listtwo = new list()
+Listtwo.printList()
+
+let listThree = new list()
+listThree.add(10)
+console.log("Working with one node linked list")
+listThree.printList()
