@@ -113,20 +113,42 @@ class LinkedList{
         return currentNode.data;
     }
 
+    Reverse(){
+        let currentNode = this.head;
+        let previousNode = null;
+        let placeHolder;
+
+        if(this.head === null){
+            return false;
+        }
+
+        while(currentNode !==null){
+            placeHolder = currentNode.next;
+            currentNode.next = previousNode;
+            previousNode = currentNode;
+            currentNode = placeHolder; 
+
+        }
+        this.head = previousNode;
+        
+    }
+
     printList(){
         let currentNode = this.head;
         let list = "Head -> ";
         if(currentNode === null){
+            console.log("Head -> Null")
             console.log("List is empty");
-            return;
+            return null;
         }
 
         while(currentNode !==null){
-            list+=`${currentNode.data} -> `
+            list+=`${currentNode.data} -> `;
             currentNode= currentNode.next;
         }
         list += "Null"
         console.log(list)
+        return list
     }
 
 }
