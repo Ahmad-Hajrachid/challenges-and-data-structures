@@ -17,3 +17,4 @@
 ### Linked-List: printList() method
 
 ![Remove-Middle-Value](methodImages/printList.jpg)
+
