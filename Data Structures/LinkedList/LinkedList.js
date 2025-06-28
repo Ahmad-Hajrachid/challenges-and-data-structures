@@ -151,6 +151,8 @@ class LinkedList{
         return list
     }
 
+    
+
 }
 
 module.exports = LinkedList;
