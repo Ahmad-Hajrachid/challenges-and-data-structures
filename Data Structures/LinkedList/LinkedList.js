@@ -151,6 +151,39 @@ class LinkedList{
         return list
     }
 
+
+    rotateK(k){
+        let currentNode = this.head;
+        let previousNode;
+        let index = 0;
+        let rotatedNodes = [];
+
+        if(k<0){
+            k = Math.abs((this.length-1) - Math.abs(k));
+        }
+
+        if(k>this.length-1){
+            k = k % (this.length);
+        }
+
+        while(currentNode !==null){
+            if(k>index){
+                rotatedNodes.push(currentNode.data);
+                previousNode = currentNode;
+                this.remove(previousNode.data);
+                currentNode = currentNode.next;
+                index ++;
+                
+            }else {
+                currentNode = currentNode.next;
+            }
+        }
+        rotatedNodes.forEach(num=>{
+            this.add(num)
+        })
+
+    }
+
     
 
 }
