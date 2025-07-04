@@ -2,6 +2,6 @@
 
 ![Remove-Middle-Value](../docs/mergeBoard.jpg)
 
-### Linked-List: Reverse() method output
+### Linked-List: merge() method output
 
 ![Remove-Middle-Value](../docs/mergeOutput.png)
