@@ -1,7 +1,7 @@
 ### Linked-List: merge() method
 
-![Remove-Middle-Value](../docs/mergeBoard.jpg)
+![Merge method board](../docs/mergeBoard.jpg)
 
 ### Linked-List: merge() method output
 
-![Remove-Middle-Value](../docs/mergeOutput.png)
+![Merge method output](../docs/mergeOutput.png)
