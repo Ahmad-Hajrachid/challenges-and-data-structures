@@ -26,3 +26,4 @@
 ### Queue: Peek() and isEmpty() methods
 
 ![Queue: Peek() and isEmpty() methods whiteboard](../docs-queue/Peek_and_isEmpty.jpg)
+
