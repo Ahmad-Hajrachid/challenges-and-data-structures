@@ -1,37 +1,21 @@
 const stack = require('./Stack');
 const queue = require('./Queue');
-let Stack1 = new stack()
+const deleteMiddle = require('../DeleteMiddleElement/deleteMiddle')
+let Stack1 = new deleteMiddle()
 
-// Stack1.Push(10);
-// Stack1.Push(20);
-// Stack1.Push(30);
+Stack1.Push(7);
+Stack1.Push(14);
+Stack1.Push(3);
+Stack1.Push(8);
+Stack1.Push(5);
 
-
-// console.log(Stack1.Pop())
-// console.log(Stack1.Peek())
-// console.log(Stack1)
-// console.log("--------------------------")
-// console.log(Stack1.Pop())
-// console.log(Stack1.Peek())
-// console.log(Stack1)
-// console.log("--------------------------")
-// console.log(Stack1.Pop())
-// console.log(Stack1.Peek())
-// console.log(Stack1)
-
-
-let Queue1 = new queue();
-
-Queue1.Enqueue(10);
-Queue1.Enqueue(15);
-Queue1.Enqueue(20);
-Queue1.Enqueue(30);
-
-
-console.log(Queue1.Peek())
-console.log(Queue1.Dequeue())
-console.log(Queue1.Dequeue())
-console.log(Queue1.Dequeue())
-console.log(Queue1.isEmpty())
-console.log(Queue1.Dequeue())
-console.log(Queue1.isEmpty())
+console.log("Before:", Stack1.display()); //
+Stack1.deleteMiddle();
+console.log("After:", Stack1.display());
+console.log("--------------------------------")
+Stack1.Push(2);
+Stack1.Push(9);
+Stack1.Push(11);
+console.log("Before:", Stack1.display()); //
+Stack1.deleteMiddle();
+console.log("After:", Stack1.display());

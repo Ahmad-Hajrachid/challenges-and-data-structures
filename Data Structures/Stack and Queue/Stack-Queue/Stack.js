@@ -53,6 +53,22 @@ class Stack {
                 return false;
             }
         }
+
+        display(){
+            if(this.length === 0){
+                return "Stack is empty.";
+            }
+
+            let result = `Stack: top`;
+            let current = this.top;
+
+            while(current !==null){
+                // result.push(current.data);
+                result += ` -> ${current.data}`
+                current = current.next;
+            }
+            return result;
+        }
 }
 
 module.exports = Stack;
