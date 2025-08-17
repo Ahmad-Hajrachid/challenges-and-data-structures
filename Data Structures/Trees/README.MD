@@ -33,4 +33,4 @@
 
 ### Binary Search Tree and Binary Tree Output whiteboard
 
-![Binary Search Tree and Binary Tree Output whiteboard](/Output.png)
+![Binary Search Tree and Binary Tree Output whiteboard](./Output/Output.png)
