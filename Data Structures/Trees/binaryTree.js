@@ -78,6 +78,36 @@ class BinaryTree {
     postOrderHelper(this.root);
     return result;
 }
+    FindSecondMax(){
+        if(!this.root)return null
+        if(!this.root.left && !this.root.right) return null;
+        
+        let currentMax = this.root.value;
+        let secondMax = null;
+
+
+        function FindSecondMaxHelper(Node){
+            
+            if(Node){
+                
+                if (currentMax < Node.value) {
+                    secondMax = currentMax;
+                    currentMax = Node.value;
+                    
+                }
+                if(currentMax > Node.value) {
+                    if(secondMax < Node.value){
+                        secondMax = Node.value;
+                    }
+                               
+                }
+                FindSecondMaxHelper(Node.right)
+                FindSecondMaxHelper(Node.left)   
+            }
+        }
+        FindSecondMaxHelper(this.root);
+        return secondMax === null ? this.root.value : secondMax;
+    }
 
     print() {
     if (!this.root) {
