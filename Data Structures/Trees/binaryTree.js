@@ -109,6 +109,27 @@ class BinaryTree {
         return secondMax === null ? this.root.value : secondMax;
     }
 
+    leafSum(){
+
+        if(!this.root)return null
+        if(!this.root.left && !this.root.right) return this.root.value;
+
+        let leafsSum = 0;
+
+        function leafSumHelper(node){
+            if(node){
+                if (!node.left && !node.right) {
+                    leafsSum +=node.value
+                } else {
+                    leafSumHelper(node.left)
+                    leafSumHelper(node.right)
+                }
+            }
+        }
+        leafSumHelper(this.root);
+        return leafsSum;
+    }
+
     print() {
     if (!this.root) {
         console.log("Tree is empty");
